@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>罗卓聪 · 个人主页</title>
+  <meta name="description" content="罗卓聪的个人主页 —— 广东技术师范大学车辆工程专业 2027 届本科生，方向：测试开发 / AI 应用测试 与 车辆工程仿真分析。">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%234f46e5'/%3E%3Ctext x='32' y='44' font-size='34' font-family='sans-serif' fill='white' text-anchor='middle'%3E罗%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ===================== 导航栏 ===================== -->
+  <header class="nav" id="nav">
+    <div class="container nav-inner">
+      <a class="nav-brand" href="#top">
+        <span class="nav-logo">罗</span>
+        <span class="nav-name">罗卓聪</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="打开菜单" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav-links" id="navLinks">
+        <a href="#about">关于我</a>
+        <a href="#projects">项目经历</a>
+        <a href="#skills">专业技能</a>
+        <a href="#contact">联系方式</a>
+        <div class="nav-resume dropdown">
+          <button class="btn btn-sm btn-outline dropdown-btn">下载简历 ▾</button>
+          <div class="dropdown-menu">
+            <a href="测试岗位简历.pdf" target="_blank">📄 测试岗位简历</a>
+            <a href="车辆岗位简历.pdf" target="_blank">📄 车辆岗位简历</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===================== 首屏 ===================== -->
+  <section class="hero" id="top">
+    <div class="hero-bg" aria-hidden="true">
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+      <div class="grid-pattern"></div>
+    </div>
+    <div class="container hero-inner">
+      <p class="hero-eyebrow reveal">广东技术师范大学 · 车辆工程 · 2027 届本科生</p>
+      <h1 class="hero-title reveal">你好，我是 <span class="gradient-text">罗卓聪</span></h1>
+      <p class="hero-sub reveal">
+        测试开发 <span class="x">×</span> 车辆仿真 —— 既做大模型应用的功能与接口测试，也做离散元与动力学仿真分析。<br>
+        用工程与数据的思维，把系统质量与仿真结果都做到可验证。
+      </p>
+      <div class="hero-contact reveal">
+        <a class="chip" href="mailto:2981068116@qq.com">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          2981068116@qq.com
+        </a>
+      </div>
+      <div class="hero-cta reveal">
+        <a class="btn btn-primary" href="#projects">查看项目 →</a>
+        <a class="btn btn-ghost" href="测试岗位简历.pdf" target="_blank">测试岗简历</a>
+        <a class="btn btn-ghost" href="车辆岗位简历.pdf" target="_blank">车辆岗简历</a>
+      </div>
+      <div class="hero-stats reveal">
+        <div class="stat"><strong>前 5%</strong><span>专业排名（绩点）</span></div>
+        <div class="stat"><strong>CET-4 / 6</strong><span>英语水平</span></div>
+        <div class="stat"><strong>4+</strong><span>核心项目</span></div>
+        <div class="stat"><strong>2</strong><span>技术方向</span></div>
+      </div>
+    </div>
+  </section>
+
+  <main>
+
+    <!-- ===================== 关于我 / 教育经历 ===================== -->
+    <section class="section" id="about">
+      <div class="container">
+        <h2 class="section-title reveal">关于我<span class="section-en">About</span></h2>
+        <div class="about-grid">
+          <div class="card edu-card reveal">
+            <div class="card-head">
+              <span class="icon-badge">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10L12 5 2 10l10 5 10-5z"/><path d="M6 12v5c0 1.7 2.7 3 6 3s6-1.3 6-3v-5"/></svg>
+              </span>
+              <h3>教育经历</h3>
+            </div>
+            <div class="edu-item">
+              <div class="edu-top">
+                <strong>广东技术师范大学</strong>
+                <span class="time">2023.9 – 2027.7</span>
+              </div>
+              <p class="edu-major">车辆工程 · 本科</p>
+              <ul class="edu-list">
+                <li><b>主修课程：</b>Python 程序设计基础、智能图像处理（OpenCV）、C 语言程序设计、汽车构造、工程力学、汽车设计、汽车安全</li>
+                <li><b>学习情况：</b>绩点专业排名前 5%，通过 CET-4、CET-6</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="card intro-card reveal">
+            <div class="card-head">
+              <span class="icon-badge">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+              </span>
+              <h3>个人简介</h3>
+            </div>
+            <p>
+              我是广东技术师范大学车辆工程专业的 2027 届本科生，同时深耕两个方向：
+              <b>测试开发 / AI 应用测试</b> 与 <b>车辆工程仿真分析</b>。
+            </p>
+            <p>
+              在测试方向，熟悉 Python 全栈与大模型应用架构，围绕智能对话、Agent、简历分析、模拟面试等场景，
+              做功能测试、接口测试、数据库校验与异常场景验证；
+              在车辆方向，掌握 SolidWorks 建模与 ANSYS Rocky DEM、LS-DYNA 仿真分析。
+            </p>
+            <div class="tag-row">
+              <span class="tag">Python</span><span class="tag">大模型应用测试</span><span class="tag">接口测试</span>
+              <span class="tag">离散元仿真</span><span class="tag">动力学仿真</span><span class="tag">数据分析</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 项目经历 ===================== -->
+    <section class="section section-alt" id="projects">
+      <div class="container">
+        <h2 class="section-title reveal">项目经历<span class="section-en">Projects</span></h2>
+
+        <!-- 重点项目：职小猪（含视频演示） -->
+        <article class="project-featured card reveal">
+          <div class="pf-info">
+            <div class="pf-meta">
+              <span class="badge badge-hot">⭐ 重点项目 · 含演示视频</span>
+              <span class="time">2026.5 – 2026.7</span>
+            </div>
+            <h3 class="pf-title">职小猪 · 智能求职 Agent</h3>
+            <p class="pf-desc">
+              面向在校生及应届生的 <b>AI 职业规划平台</b>，集成智能对话、简历分析、模拟面试、
+              沉浸式视频面试及职位搜索等功能，基于多 Agent 架构实现多场景功能交互。
+            </p>
+            <div class="tag-row">
+              <span class="tag">Flask</span><span class="tag">OpenAI-Compatible API</span>
+              <span class="tag">Tool Calling</span><span class="tag">SSE</span>
+              <span class="tag">MySQL</span><span class="tag">ChromaDB</span>
+            </div>
+            <ul class="pf-highlights">
+              <li>通过<b>多 Agent 架构</b>实现智能问答、简历分析、模拟面试、职位搜索等功能，功能测试验证不同 Agent 在多场景下的业务逻辑与结果返回正确性</li>
+              <li><b>Flask + SSE</b> 实现流式对话，针对高频请求、异常输入及长文本场景验证，提高系统连续交互稳定性</li>
+              <li><b>MySQL</b> 存储用户信息及会话记录，数据库查询对接口返回数据校验，实现多用户会话隔离与数据一致性验证</li>
+              <li><b>ChromaDB</b> 向量检索构建知识库查询能力，针对不同问题场景验证检索结果准确性，提升知识问答效果</li>
+              <li><b>Postman、Requests</b> 对聊天、简历分析、职位搜索等核心接口测试，验证请求参数、响应状态码及返回数据的正确性</li>
+              <li>针对<b>异常输入、空参数、工具调用失败</b>等边界场景验证系统异常处理能力，结合日志信息进行问题定位与分析</li>
+            </ul>
+            <div class="pf-links">
+              <a class="btn btn-sm btn-outline" href="https://github.com/Jayfans99128/agent-competition" target="_blank" rel="noopener">
+                <svg class="icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.55v-2.17c-3.2.7-3.87-1.36-3.87-1.36-.52-1.33-1.28-1.68-1.28-1.68-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.03 1.76 2.7 1.25 3.35.96.1-.75.4-1.25.72-1.54-2.55-.29-5.23-1.28-5.23-5.68 0-1.26.45-2.28 1.18-3.09-.12-.29-.51-1.46.11-3.05 0 0 .96-.31 3.15 1.18a10.9 10.9 0 0 1 5.74 0c2.19-1.49 3.15-1.18 3.15-1.18.63 1.59.24 2.76.12 3.05.74.81 1.18 1.83 1.18 3.09 0 4.41-2.69 5.38-5.25 5.67.41.35.78 1.05.78 2.12v3.14c0 .3.21.67.8.55A10.52 10.52 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>
+                GitHub 仓库
+              </a>
+            </div>
+          </div>
+          <div class="pf-media">
+            <figure class="video-frame">
+              <video
+                id="demoVideo"
+                controls
+                preload="metadata"
+                poster="assets/video-poster.jpg"
+                playsinline>
+                <source src="assets/zhixiaozhu-demo.mp4" type="video/mp4">
+                您的浏览器不支持视频播放，请直接下载观看。
+              </video>
+              <figcaption>
+                项目演示视频 · 2026.06.09 · 约 3 分钟（演示智能对话、简历分析、模拟面试、职位搜索等核心功能）
+              </figcaption>
+            </figure>
+          </div>
+        </article>
+
+        <!-- 其余项目 -->
+        <div class="project-grid">
+
+          <article class="card project-card reveal">
+            <div class="pf-meta">
+              <span class="badge">AI 应用 · 测试</span>
+              <span class="time">2026.7 – 至今</span>
+            </div>
+            <h3>智能陪伴交互系统</h3>
+            <p class="pf-desc">
+              面向长期陪伴场景的智能交互系统，围绕多轮对话、长期记忆、主动交互及语音交互等功能构建，
+              实现持续上下文管理与多模态人机交互。
+            </p>
+            <div class="tag-row">
+              <span class="tag">OpenAI-Compatible API</span><span class="tag">Agent</span>
+              <span class="tag">Memory</span><span class="tag">TTS</span><span class="tag">SSE</span>
+            </div>
+            <ul class="pf-highlights">
+              <li><b>MySQL</b> 持久化历史消息与长期记忆，近期对话与长期记忆分层存储；多轮会话测试验证跨会话上下文保持，实测<b>连续对话 114+ 轮</b>未出现上下文丢失</li>
+              <li><b>SSE 流式响应</b>实现大模型实时输出，针对网络中断、超时、空响应等异常场景验证，保证流式对话稳定运行</li>
+              <li><b>ChromaDB</b> 向量库对车辆工程、考研、国考等数据建立向量索引，语义检索测试验证结果准确性</li>
+              <li><b>Tool Calling</b> 实现联网搜索、知识查询、简历解析等工具动态调用，接口测试验证工具选择与参数传递逻辑</li>
+              <li><b>Agent + TTS</b> 构建完整语音交互链路，日志分析与接口返回比对完成数据校验</li>
+            </ul>
+            <div class="pf-links">
+              <a class="btn btn-sm btn-outline" href="https://github.com/Jayfans99128/ai-chat" target="_blank" rel="noopener">
+                <svg class="icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.55v-2.17c-3.2.7-3.87-1.36-3.87-1.36-.52-1.33-1.28-1.68-1.28-1.68-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.03 1.76 2.7 1.25 3.35.96.1-.75.4-1.25.72-1.54-2.55-.29-5.23-1.28-5.23-5.68 0-1.26.45-2.28 1.18-3.09-.12-.29-.51-1.46.11-3.05 0 0 .96-.31 3.15 1.18a10.9 10.9 0 0 1 5.74 0c2.19-1.49 3.15-1.18 3.15-1.18.63 1.59.24 2.76.12 3.05.74.81 1.18 1.83 1.18 3.09 0 4.41-2.69 5.38-5.25 5.67.41.35.78 1.05.78 2.12v3.14c0 .3.21.67.8.55A10.52 10.52 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>
+                GitHub 仓库
+              </a>
+            </div>
+          </article>
+
+          <article class="card project-card reveal">
+            <div class="pf-meta">
+              <span class="badge">车辆仿真</span>
+              <span class="time">2026.07 – 2026.09</span>
+            </div>
+            <h3>轮胎-颗粒土壤相互作用仿真</h3>
+            <p class="pf-desc">
+              面向车辆在砂石、颗粒土壤等非铺装路面上的行驶问题，基于 <b>ANSYS Rocky DEM</b> 建立刚性轮胎
+              与颗粒土壤相互作用模型，模拟轮胎在颗粒介质中的行驶过程，重点关注轮胎下陷及土体变形等响应。
+            </p>
+            <div class="tag-row">
+              <span class="tag">ANSYS Rocky DEM</span><span class="tag">离散元法</span>
+              <span class="tag">颗粒介质仿真</span><span class="tag">工程数据分析</span>
+            </div>
+            <ul class="pf-highlights">
+              <li><b>模型建立：</b>建立刚性轮胎与颗粒土壤离散元模型，完成轮胎模型导入、颗粒区域建立及材料、接触等参数设置</li>
+              <li><b>运动模拟：</b>设置轮胎质量、运动及仿真参数，模拟轮胎在颗粒土壤路面上的行驶过程</li>
+              <li><b>结果分析：</b>以下陷量等响应为主要观察指标，通过轮胎运动及轮心位置变化分析下陷特征，为牵引力等行驶性能研究打基础</li>
+              <li><b>研究规划：</b>后续围绕载荷、胎压、滑移率等工况参数展开研究，并引入颗粒破碎模型</li>
+            </ul>
+          </article>
+
+          <article class="card project-card reveal">
+            <div class="pf-meta">
+              <span class="badge">车辆仿真</span>
+              <span class="time">2025.05 – 2025.06</span>
+            </div>
+            <h3>弓箭发射过程动态仿真</h3>
+            <p class="pf-desc">
+              独立建立弓、弓弦及箭矢模型，基于 <b>LS-DYNA</b> 模拟弓箭蓄力、释放及发射过程，
+              观察弓弦受力、弓体变形及箭矢运动速度等结果，熟悉机械结构动态仿真的基本流程。
+            </p>
+            <div class="tag-row">
+              <span class="tag">LS-DYNA</span><span class="tag">三维建模</span>
+              <span class="tag">动力学仿真</span><span class="tag">工程结果分析</span>
+            </div>
+            <ul class="pf-highlights">
+              <li><b>模型建立：</b>独立完成弓、弓弦及箭矢模型建立，搭建弓箭发射过程仿真模型</li>
+              <li><b>动态仿真：</b>模拟弓箭从蓄力到释放、箭矢发射的动态过程，观察弓体、弓弦及箭矢的运动变化</li>
+              <li><b>结果分析：</b>观察弓弦受力、弓体变形及箭矢速度等仿真结果，分析动态载荷下机械结构的响应特征</li>
+            </ul>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 专业技能 ===================== -->
+    <section class="section" id="skills">
+      <div class="container">
+        <h2 class="section-title reveal">专业技能<span class="section-en">Skills</span></h2>
+        <div class="skills-grid">
+
+          <div class="card skill-card reveal">
+            <div class="card-head">
+              <span class="icon-badge icon-badge-cyan">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+              </span>
+              <h3>测试开发 · AI 应用</h3>
+            </div>
+            <dl class="skill-list">
+              <div class="skill-item">
+                <dt>Python 开发</dt>
+                <dd>熟练掌握 Python 基础，熟悉 FastAPI、Flask、RESTful API、异步 IO</dd>
+              </div>
+              <div class="skill-item">
+                <dt>数据库</dt>
+                <dd>熟练掌握 MySQL，理解事务、索引与 SQL 优化</dd>
+              </div>
+              <div class="skill-item">
+                <dt>大模型应用</dt>
+                <dd>熟悉大模型 API 调用、Prompt 工程、Agent 设计、Function Calling</dd>
+              </div>
+              <div class="skill-item">
+                <dt>测试工具</dt>
+                <dd>熟悉 Selenium、Requests、Git、Postman 等开发测试工具</dd>
+              </div>
+              <div class="skill-item">
+                <dt>其他</dt>
+                <dd>熟悉 Linux 基础命令，了解 ChromaDB 向量库、RAG 检索原理</dd>
+              </div>
+            </dl>
+            <div class="tag-row">
+              <span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">Flask</span>
+              <span class="tag">MySQL</span><span class="tag">Prompt 工程</span><span class="tag">Agent</span>
+              <span class="tag">Function Calling</span><span class="tag">Selenium</span><span class="tag">Postman</span>
+              <span class="tag">Git</span><span class="tag">Linux</span><span class="tag">RAG</span>
+            </div>
+          </div>
+
+          <div class="card skill-card reveal">
+            <div class="card-head">
+              <span class="icon-badge">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+              </span>
+              <h3>车辆工程 · 仿真分析</h3>
+            </div>
+            <dl class="skill-list">
+              <div class="skill-item">
+                <dt>工程软件</dt>
+                <dd>SolidWorks、ANSYS Rocky DEM、LS-DYNA、Origin、MATLAB</dd>
+              </div>
+              <div class="skill-item">
+                <dt>机械设计</dt>
+                <dd>熟悉三维建模、装配、阵列、约束及基础运动仿真，具备独立机械结构建模能力</dd>
+              </div>
+              <div class="skill-item">
+                <dt>工程仿真</dt>
+                <dd>掌握离散元及动态过程仿真基础，具备颗粒介质建模、轮胎运动模拟及应力、变形、速度等结果分析经验</dd>
+              </div>
+              <div class="skill-item">
+                <dt>数据分析</dt>
+                <dd>掌握 Origin 数据处理与可视化，具备 MATLAB 基础工程计算能力</dd>
+              </div>
+            </dl>
+            <div class="tag-row">
+              <span class="tag">SolidWorks</span><span class="tag">ANSYS Rocky DEM</span><span class="tag">LS-DYNA</span>
+              <span class="tag">Origin</span><span class="tag">MATLAB</span><span class="tag">三维建模</span>
+              <span class="tag">离散元仿真</span><span class="tag">动力学仿真</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 联系方式 ===================== -->
+    <section class="section section-alt" id="contact">
+      <div class="container">
+        <h2 class="section-title reveal">联系方式<span class="section-en">Contact</span></h2>
+        <div class="card contact-card reveal">
+          <p class="contact-lead">感谢浏览！欢迎通过以下方式与我联系，期待与你交流 🤝</p>
+          <div class="contact-actions">
+            <a class="contact-item" href="mailto:2981068116@qq.com">
+              <span class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </span>
+              <span class="contact-text"><b>邮箱</b><small>2981068116@qq.com</small></span>
+            </a>
+            <a class="contact-item" href="https://github.com/Jayfans99128" target="_blank" rel="noopener">
+              <span class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.55v-2.17c-3.2.7-3.87-1.36-3.87-1.36-.52-1.33-1.28-1.68-1.28-1.68-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.03 1.76 2.7 1.25 3.35.96.1-.75.4-1.25.72-1.54-2.55-.29-5.23-1.28-5.23-5.68 0-1.26.45-2.28 1.18-3.09-.12-.29-.51-1.46.11-3.05 0 0 .96-.31 3.15 1.18a10.9 10.9 0 0 1 5.74 0c2.19-1.49 3.15-1.18 3.15-1.18.63 1.59.24 2.76.12 3.05.74.81 1.18 1.83 1.18 3.09 0 4.41-2.69 5.38-5.25 5.67.41.35.78 1.05.78 2.12v3.14c0 .3.21.67.8.55A10.52 10.52 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>
+              </span>
+              <span class="contact-text"><b>GitHub</b><small>github.com/Jayfans99128</small></span>
+            </a>
+            <a class="contact-item" href="测试岗位简历.pdf" target="_blank">
+              <span class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+              </span>
+              <span class="contact-text"><b>简历</b><small>测试岗 / 车辆岗（PDF）</small></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© 2026 罗卓聪 · 个人主页</p>
+      <a href="#top" class="back-top">回到顶部 ↑</a>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
