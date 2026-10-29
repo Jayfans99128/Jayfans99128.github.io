@@ -129,38 +129,6 @@ ul { list-style: none; }
   background: var(--brand-soft);
 }
 
-.dropdown { position: relative; margin-left: 8px; }
-.dropdown-btn { background: rgba(255,255,255,.1); border-color: rgba(255,255,255,.35); color: #fff; }
-.nav.scrolled .dropdown-btn { background: var(--surface); border-color: var(--line); color: var(--ink-soft); }
-.nav.scrolled .dropdown-btn:hover { border-color: var(--brand); color: var(--brand); }
-.dropdown-menu {
-  position: absolute;
-  top: calc(100% + 10px);
-  right: 0;
-  min-width: 190px;
-  background: var(--surface);
-  border: 1px solid var(--line);
-  border-radius: 14px;
-  box-shadow: var(--shadow-lg);
-  padding: 6px;
-  opacity: 0;
-  visibility: hidden;
-  transform: translateY(-6px);
-  transition: all .2s ease;
-}
-.dropdown:hover .dropdown-menu,
-.dropdown:focus-within .dropdown-menu {
-  opacity: 1; visibility: visible; transform: translateY(0);
-}
-.dropdown-menu a {
-  display: block;
-  padding: 10px 14px;
-  border-radius: 10px;
-  font-size: 14px;
-  color: var(--ink-soft);
-}
-.dropdown-menu a:hover { background: var(--brand-soft); color: var(--brand); }
-
 .nav-toggle { display: none; }
 
 /* ---------- 首屏 ---------- */
@@ -410,6 +378,9 @@ ul { list-style: none; }
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 24px;
+}
+.project-grid > .project-card:only-child {
+  grid-column: 1 / -1;
   align-items: start;
 }
 .project-card:hover { transform: translateY(-5px); box-shadow: var(--shadow-lg); }
@@ -423,6 +394,9 @@ ul { list-style: none; }
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 24px;
+}
+.skills-grid > .skill-card:only-child {
+  grid-column: 1 / -1;
   align-items: start;
 }
 .skill-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); }
@@ -442,7 +416,7 @@ ul { list-style: none; }
 .contact-lead { font-size: 17px; color: var(--ink-soft); margin-bottom: 30px; }
 .contact-actions {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 16px;
 }
 .contact-item {
@@ -562,8 +536,6 @@ ul { list-style: none; }
   .nav.scrolled .nav-links > a { color: #e2e8f0; }
   .nav.scrolled .nav-links > a:hover,
   .nav.scrolled .nav-links > a.active { color: #fff; background: rgba(255,255,255,.1); }
-  .dropdown { margin: 12px 0 0; }
-  .dropdown-btn { background: rgba(255,255,255,.1); border-color: rgba(255,255,255,.35); color: #fff; font-size: 16px; }
 }
 
 @media (prefers-reduced-motion: reduce) {
